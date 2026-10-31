@@ -1,0 +1,66 @@
+GoLocal Privacy Policy
+Last updated: November 1, 2026
+
+1. Who we are
+GoLocal is operated by [LEGAL BUSINESS OR OPERATOR NAME], based in India. Our contact address is [BUSINESS CONTACT ADDRESS].
+
+For questions about this policy or requests concerning your personal information, contact us at support@golocal.app.
+
+2. Who can use GoLocal
+GoLocal is intended for adults aged 18 or older. Do not create or use an account if you are under 18. The app does not currently ask for your date of birth or otherwise verify your age.
+
+If you believe someone under 18 has provided personal information to GoLocal, contact us so we can review the matter.
+
+3. Information we collect
+Depending on how you use GoLocal, we may collect or process:
+
+Account information: Your mobile number, Firebase account identifier, and information needed to verify your number by one-time password (OTP).
+Profile information: Your name, profile photo, account type, selected state and city, and account activity timestamps.
+Listing information: The title, description, category, budget, state, city, area, status, and dates associated with jobs or other listings you create.
+Messages and interactions: Messages, sender and recipient identifiers, timestamps, and interaction information needed to support in-app messaging.
+Support correspondence: Information you choose to provide when contacting us.
+Your phone number is stored separately from your public profile information.
+
+4. Location and photos
+GoLocal lets you select a state and city and enter an area for a listing. The current app does not request device location permission or collect precise GPS location.
+
+You can choose a profile photo from your photo library. The app compresses the selected image and stores it using Firebase Storage. The app does not request camera access for this feature.
+
+5. How we use information
+We use information to:
+
+Create, verify, and manage accounts.
+Display profiles and listings and help users discover listings by location and category.
+Enable messaging and other user interactions.
+Maintain and support the service.
+Protect the service, enforce our terms, and address legal obligations.
+The current app version does not integrate an advertising SDK, analytics SDK, or payment processor. This may change if the app’s features or services change.
+
+6. How information is shared
+GoLocal uses Google Firebase services, including Firebase Authentication, Cloud Firestore, and Firebase Storage, to provide account verification, data storage, and photo storage. Google processes information under its own terms and privacy disclosures.
+
+Information in profiles and listings may be visible to other GoLocal users as needed to provide the service. Messages are exchanged through the app between users. Please avoid including sensitive information in a profile, listing, or message unless you are comfortable sharing it with the recipient or other users who can view it.
+
+We may also disclose information when required by law or when reasonably necessary to protect users, the service, or our rights.
+
+7. Storage and processing locations
+Google may process information in locations outside India. Storage locations depend on the Firebase project configuration and Google’s service infrastructure.
+
+8. Retention and account deletion
+You can request account deletion through the app’s profile screen. In the current implementation, the app attempts to delete the sign-in account and, if that succeeds, marks the profile, loaded active listings, and loaded interaction records as deleted.
+
+This process does not erase stored chat messages, the separate private profile record, or the uploaded profile photo. Those records may remain after account deletion. To ask us to review or remove remaining information, contact support@golocal.app.
+
+We do not currently publish a fixed retention period. Information may be retained as needed to operate the service, resolve disputes, meet legal obligations, or maintain backups.
+
+9. Your choices and requests
+You can update profile details and your selected city or state in the app. You may also contact support@golocal.app to request access to, correction of, or deletion of your information. We will review and respond to requests as required by applicable law. Some information may need to be retained for operational or legal reasons.
+
+10. Security
+We use Firebase services to store and process app information. No method of electronic storage or transmission is completely secure, so we cannot guarantee absolute security.
+
+11. Changes to this policy
+We may update this policy when the app or our data practices change. We will revise the “Last updated” date when we publish changes.
+
+12. Contact us
+For questions or privacy-related requests, email support@golocal.app or write to [BUSINESS CONTACT ADDRESS].
