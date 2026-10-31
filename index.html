@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#F97415">
-<meta name="description" content="GoLocal Privacy Policy">
-<title>Privacy Policy | GoLocal</title>
+<meta name="description" content="GoLocal Privacy Policy and Terms & Conditions.">
+<title>Legal & Policies | GoLocal</title>
 
 <style>
 :root {
@@ -52,7 +52,7 @@ header {
 }
 
 .header-container {
-  max-width: 1080px;
+  max-width: 1100px;
   margin: auto;
   padding: 18px 24px;
   display: flex;
@@ -67,7 +67,6 @@ header {
   color: var(--orange);
   font-size: 25px;
   font-weight: 800;
-  letter-spacing: -1px;
 }
 
 .brand-icon {
@@ -86,18 +85,67 @@ header {
 }
 
 main {
-  max-width: 1080px;
-  margin: 45px auto 70px;
+  max-width: 1100px;
+  margin: 40px auto 70px;
   padding: 0 24px;
-  display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  gap: 32px;
+}
+
+.hero {
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  color: var(--muted);
+  margin-top: 5px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+  background: #FFF7F0;
+  border-radius: 13px;
+  margin-bottom: 25px;
+}
+
+.tab {
+  flex: 1;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: var(--orange);
+  color: white;
+  box-shadow: 0 3px 10px rgba(249,116,21,.2);
+}
+
+.document {
+  display: none;
+  grid-template-columns: 235px minmax(0, 1fr);
+  gap: 30px;
   align-items: start;
+}
+
+.document.active {
+  display: grid;
 }
 
 .sidebar {
   position: sticky;
-  top: 24px;
+  top: 20px;
   padding: 20px;
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -105,29 +153,31 @@ main {
 }
 
 .sidebar h3 {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   font-size: 13px;
   color: var(--orange);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.sidebar a {
+.sidebar nav a {
   display: block;
-  padding: 6px 0;
+  padding: 5px 0;
   font-size: 13px;
   color: var(--black);
+  line-height: 1.5;
 }
 
-.sidebar a:hover {
+.sidebar nav a:hover {
   color: var(--orange);
 }
 
 .content {
-  padding: 45px;
+  min-width: 0;
+  padding: 40px;
   border: 1px solid var(--border);
   border-radius: 18px;
-  box-shadow: 0 8px 35px rgba(52, 66, 86, 0.05);
+  box-shadow: 0 8px 35px rgba(52,66,86,.05);
 }
 
 .tag {
@@ -138,22 +188,21 @@ main {
   color: var(--black);
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: .5px;
   text-transform: uppercase;
+  letter-spacing: .5px;
 }
 
-h1 {
-  margin: 15px 0 5px;
-  font-size: 42px;
-  line-height: 1.2;
-  letter-spacing: -1.5px;
-  color: var(--black);
+.content h1 {
+  margin: 14px 0 5px;
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: -1px;
 }
 
 .updated {
   color: var(--muted);
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .intro {
@@ -161,28 +210,29 @@ h1 {
   background: #FFF7F0;
   border-left: 4px solid var(--orange);
   border-radius: 6px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 section {
-  padding: 25px 0;
+  padding: 24px 0;
   border-top: 1px solid var(--border);
   scroll-margin-top: 25px;
 }
 
 section h2 {
-  margin: 0 0 14px;
-  font-size: 21px;
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 1.4;
   color: var(--orange);
-  letter-spacing: -.3px;
 }
 
 p {
-  margin: 0 0 13px;
+  margin: 0 0 12px;
 }
 
 ul {
   padding-left: 23px;
+  margin: 10px 0 15px;
 }
 
 li {
@@ -197,8 +247,8 @@ strong {
   margin-top: 15px;
   padding: 20px;
   background: #FFF7F0;
-  border-radius: 10px;
   border-left: 4px solid var(--green);
+  border-radius: 10px;
 }
 
 footer {
@@ -211,8 +261,13 @@ footer {
 
 @media(max-width: 760px) {
   main {
-    grid-template-columns: 1fr;
     margin: 25px auto 45px;
+    padding: 0 16px;
+  }
+
+  .document,
+  .document.active {
+    grid-template-columns: 1fr;
     gap: 18px;
   }
 
@@ -223,25 +278,30 @@ footer {
   .sidebar nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3px 12px;
+    gap: 4px 12px;
   }
 
   .content {
     padding: 25px 20px;
   }
 
-  h1 {
-    font-size: 34px;
+  .content h1 {
+    font-size: 30px;
   }
 }
 
 @media(max-width: 420px) {
-  main {
-    padding: 0 14px;
+  .header-container {
+    padding: 14px;
   }
 
-  .header-container {
-    padding: 15px;
+  .tabs {
+    gap: 5px;
+  }
+
+  .tab {
+    padding: 12px 7px;
+    font-size: 13px;
   }
 
   .sidebar nav {
@@ -259,6 +319,7 @@ footer {
       <span class="brand-icon">G</span>
       GoLocal
     </a>
+
     <a href="mailto:support@golocal.app" class="contact-link">
       Contact Support
     </a>
@@ -267,30 +328,47 @@ footer {
 
 <main>
 
+<div class="hero">
+  <h1>Legal & Policies</h1>
+  <p>Transparency, trust and safety are important to us.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showDocument('privacy', this)">
+    Privacy Policy
+  </button>
+
+  <button class="tab" onclick="showDocument('terms', this)">
+    Terms & Conditions
+  </button>
+</div>
+
+<!-- PRIVACY POLICY -->
+
+<div class="document active" id="privacy">
+
 <aside class="sidebar">
-  <h3>On this page</h3>
+  <h3>Privacy Policy</h3>
   <nav>
-    <a href="#s1">1. Who we are</a>
-    <a href="#s2">2. Who can use GoLocal</a>
-    <a href="#s3">3. Information we collect</a>
-    <a href="#s4">4. Location and photos</a>
-    <a href="#s5">5. How we use information</a>
-    <a href="#s6">6. How information is shared</a>
-    <a href="#s7">7. Storage and processing</a>
-    <a href="#s8">8. Retention and deletion</a>
-    <a href="#s9">9. Your choices</a>
-    <a href="#s10">10. Security</a>
-    <a href="#s11">11. Changes</a>
-    <a href="#s12">12. Contact us</a>
+    <a href="#p1">1. Who we are</a>
+    <a href="#p2">2. Who can use GoLocal</a>
+    <a href="#p3">3. Information we collect</a>
+    <a href="#p4">4. Location and photos</a>
+    <a href="#p5">5. How we use information</a>
+    <a href="#p6">6. How information is shared</a>
+    <a href="#p7">7. Storage and processing</a>
+    <a href="#p8">8. Retention and deletion</a>
+    <a href="#p9">9. Your choices</a>
+    <a href="#p10">10. Security</a>
+    <a href="#p11">11. Changes</a>
+    <a href="#p12">12. Contact us</a>
   </nav>
 </aside>
 
 <article class="content">
 
 <span class="tag">Your privacy matters</span>
-
 <h1>Privacy Policy</h1>
-
 <p class="updated">Last updated: November 1, 2026</p>
 
 <p class="intro">
@@ -299,19 +377,19 @@ how we use and share it, and the choices available to you
 when using the app.
 </p>
 
-<section id="s1">
+<section id="p1">
 <h2>1. Who we are</h2>
 <p>GoLocal is operated by <strong>[LEGAL BUSINESS OR OPERATOR NAME]</strong>, based in India. Our contact address is <strong>[BUSINESS CONTACT ADDRESS]</strong>.</p>
 <p>For questions about this policy or requests concerning your personal information, contact us at <a href="mailto:support@golocal.app">support@golocal.app</a>.</p>
 </section>
 
-<section id="s2">
+<section id="p2">
 <h2>2. Who can use GoLocal</h2>
 <p>GoLocal is intended for adults aged 18 or older. Do not create or use an account if you are under 18. The app does not currently ask for your date of birth or otherwise verify your age.</p>
 <p>If you believe someone under 18 has provided personal information to GoLocal, contact us so we can review the matter.</p>
 </section>
 
-<section id="s3">
+<section id="p3">
 <h2>3. Information we collect</h2>
 <p>Depending on how you use GoLocal, we may collect or process:</p>
 <ul>
@@ -324,13 +402,13 @@ when using the app.
 <p>Your phone number is stored separately from your public profile information.</p>
 </section>
 
-<section id="s4">
+<section id="p4">
 <h2>4. Location and photos</h2>
 <p>GoLocal lets you select a state and city and enter an area for a listing. The current app does not request device location permission or collect precise GPS location.</p>
 <p>You can choose a profile photo from your photo library. The app compresses the selected image and stores it using Firebase Storage. The app does not request camera access for this feature.</p>
 </section>
 
-<section id="s5">
+<section id="p5">
 <h2>5. How we use information</h2>
 <p>We use information to:</p>
 <ul>
@@ -343,41 +421,41 @@ when using the app.
 <p>The current app version does not integrate an advertising SDK, analytics SDK, or payment processor. This may change if the app’s features or services change.</p>
 </section>
 
-<section id="s6">
+<section id="p6">
 <h2>6. How information is shared</h2>
 <p>GoLocal uses Google Firebase services, including Firebase Authentication, Cloud Firestore, and Firebase Storage, to provide account verification, data storage, and photo storage. Google processes information under its own terms and privacy disclosures.</p>
 <p>Information in profiles and listings may be visible to other GoLocal users as needed to provide the service. Messages are exchanged through the app between users. Please avoid including sensitive information in a profile, listing, or message unless you are comfortable sharing it with the recipient or other users who can view it.</p>
 <p>We may also disclose information when required by law or when reasonably necessary to protect users, the service, or our rights.</p>
 </section>
 
-<section id="s7">
+<section id="p7">
 <h2>7. Storage and processing locations</h2>
 <p>Google may process information in locations outside India. Storage locations depend on the Firebase project configuration and Google’s service infrastructure.</p>
 </section>
 
-<section id="s8">
+<section id="p8">
 <h2>8. Retention and account deletion</h2>
 <p>You can request account deletion through the app’s profile screen. In the current implementation, the app attempts to delete the sign-in account and, if that succeeds, marks the profile, loaded active listings, and loaded interaction records as deleted.</p>
 <p>This process does not erase stored chat messages, the separate private profile record, or the uploaded profile photo. Those records may remain after account deletion. To ask us to review or remove remaining information, contact <a href="mailto:support@golocal.app">support@golocal.app</a>.</p>
 <p>We do not currently publish a fixed retention period. Information may be retained as needed to operate the service, resolve disputes, meet legal obligations, or maintain backups.</p>
 </section>
 
-<section id="s9">
+<section id="p9">
 <h2>9. Your choices and requests</h2>
 <p>You can update profile details and your selected city or state in the app. You may also contact <a href="mailto:support@golocal.app">support@golocal.app</a> to request access to, correction of, or deletion of your information. We will review and respond to requests as required by applicable law. Some information may need to be retained for operational or legal reasons.</p>
 </section>
 
-<section id="s10">
+<section id="p10">
 <h2>10. Security</h2>
 <p>We use Firebase services to store and process app information. No method of electronic storage or transmission is completely secure, so we cannot guarantee absolute security.</p>
 </section>
 
-<section id="s11">
+<section id="p11">
 <h2>11. Changes to this policy</h2>
 <p>We may update this policy when the app or our data practices change. We will revise the “Last updated” date when we publish changes.</p>
 </section>
 
-<section id="s12">
+<section id="p12">
 <h2>12. Contact us</h2>
 <p>For questions or privacy-related requests, email <a href="mailto:support@golocal.app">support@golocal.app</a> or write to:</p>
 <div class="contact-box">
@@ -388,11 +466,160 @@ India
 </section>
 
 </article>
+</div>
+
+<!-- TERMS AND CONDITIONS -->
+
+<div class="document" id="terms">
+
+<aside class="sidebar">
+  <h3>Terms & Conditions</h3>
+  <nav>
+    <a href="#t1">1. About these Terms</a>
+    <a href="#t2">2. Who may use GoLocal</a>
+    <a href="#t3">3. What GoLocal does</a>
+    <a href="#t4">4. No verification</a>
+    <a href="#t5">5. Safety and identity checks</a>
+    <a href="#t6">6. Listings and user content</a>
+    <a href="#t7">7. Work and payments</a>
+    <a href="#t8">8. User conduct</a>
+    <a href="#t9">9. Blocking and help</a>
+    <a href="#t10">10. Account deletion</a>
+    <a href="#t11">11. Privacy</a>
+    <a href="#t12">12. Service availability</a>
+    <a href="#t13">13. Changes</a>
+    <a href="#t14">14. Contact</a>
+  </nav>
+</aside>
+
+<article class="content">
+
+<span class="tag">Using GoLocal</span>
+<h1>Terms & Conditions</h1>
+<p class="updated">Last updated: November 1, 2026</p>
+
+<p class="intro">
+Please read these Terms & Conditions carefully before
+creating an account or using GoLocal.
+</p>
+
+<section id="t1">
+<h2>1. About these Terms</h2>
+<p>These Terms & Conditions apply to your access to and use of the GoLocal app and related services. By creating an account or using GoLocal, you agree to these Terms. If you do not agree, do not use the service.</p>
+<p>GoLocal is operated by <strong>[INSERT LEGAL BUSINESS OR OPERATOR NAME]</strong>, based in India. Contact us at <a href="mailto:support@golocal.app">support@golocal.app</a>.</p>
+</section>
+
+<section id="t2">
+<h2>2. Who may use GoLocal</h2>
+<p>You must be at least 18 years old to create an account or use GoLocal. You agree to provide accurate information and keep your account details secure. You are responsible for activity carried out through your account. Do not share your OTP or allow another person to use your account.</p>
+</section>
+
+<section id="t3">
+<h2>3. What GoLocal does — and does not do</h2>
+<p>GoLocal is a platform that helps users discover local job or task listings and communicate with one another. GoLocal is <strong>not</strong> a service provider, contractor, employer, recruiter, staffing agency, or gig worker.</p>
+<p>We do not perform jobs, supply workers, hire workers on your behalf, or guarantee that a listing will receive a response or result in work. Users independently decide whether to contact each other and whether to enter into any arrangement.</p>
+</section>
+
+<section id="t4">
+<h2>4. No identity, skill, or background verification</h2>
+<p>GoLocal does not currently verify users’ legal identities, age, qualifications, skills, licenses, work history, or background. A profile, listing, phone number, or claim made by a user is not proof that the claim is true. Do not assume another user is verified by GoLocal.</p>
+</section>
+
+<section id="t5">
+<h2>5. Safety and identity checks</h2>
+<p>Before meeting someone, giving them access to your home or property, or sharing personal information, take reasonable steps to confirm who they are. Where appropriate, ask to inspect a valid identity document with that person’s consent and compare it with the person you meet. Consider meeting in a public place first and telling someone you trust.</p>
+<p>Do not ask for, send, or keep another person’s full Aadhaar number, Aadhaar copy, OTP, bank credentials, or other sensitive identity information. If Aadhaar is used for identity checking, use a Masked Aadhaar or another suitable document and follow official UIDAI guidance. GoLocal does not collect or verify identity documents through the app.</p>
+</section>
+
+<section id="t6">
+<h2>6. Listings and user content</h2>
+<p>You are responsible for the listings, profile details, photos, and messages you submit. Keep them lawful, accurate, respectful, and relevant. Do not post another person’s private information or content you do not have permission to use.</p>
+<p>Listings may be shown to other users and may be removed, hidden, or marked inactive. Normal and Insta listings may have different display durations, which can change as the app develops.</p>
+</section>
+
+<section id="t7">
+<h2>7. Work arrangements and payments</h2>
+<p>Any discussion, hiring, work, delivery, price, payment, or other arrangement is solely between the users involved. GoLocal does not negotiate, supervise, guarantee, collect, or process payment for those arrangements. Confirm the scope, price, timing, and safety details directly with the other user before proceeding.</p>
+<p>Be cautious of advance-payment requests, suspicious links, and requests for OTPs or banking information.</p>
+</section>
+
+<section id="t8">
+<h2>8. User conduct</h2>
+<p>You must not impersonate anyone; defraud, threaten, harass, or discriminate against users; publish unlawful, harmful, or misleading content; spam or misuse the service; attempt to access another account or data; or use GoLocal for an unlawful purpose. You must not use the service to arrange prohibited goods, services, or activities.</p>
+</section>
+
+<section id="t9">
+<h2>9. Blocking and help</h2>
+<p>You can use the app’s blocking feature to limit interaction with another user. If you experience abuse, a suspicious listing, or a safety concern, contact <a href="mailto:support@golocal.app">support@golocal.app</a> with relevant details.</p>
+<p>Do not include passwords, OTPs, full Aadhaar numbers, or unnecessary sensitive documents in your message. We may review concerns and take action, but we do not guarantee that every user or listing will be reviewed or that a particular outcome will result.</p>
+</section>
+
+<section id="t10">
+<h2>10. Account suspension and deletion</h2>
+<p>You may stop using GoLocal at any time and request account deletion through the app. The current deletion flow deletes the sign-in account and marks the profile, loaded active listings, and loaded interactions as deleted when the deletion succeeds. Some information, including chat messages, a separate private profile record, or an uploaded photo, may remain.</p>
+<p>See the <a href="#privacy" onclick="showDocument('privacy', document.querySelectorAll('.tab')[0])">Privacy Policy</a> or contact <a href="mailto:support@golocal.app">support@golocal.app</a> for details.</p>
+<p>We may restrict or suspend access where reasonably necessary to protect users, the service, or comply with law.</p>
+</section>
+
+<section id="t11">
+<h2>11. Privacy</h2>
+<p>Our Privacy Policy explains what information the app processes, how it is used, and how to make a privacy request. By using GoLocal, you acknowledge that information will be handled as described in that policy.</p>
+</section>
+
+<section id="t12">
+<h2>12. Service availability and responsibility</h2>
+<p>We aim to keep GoLocal available, but features may change, be interrupted, or become unavailable. To the extent permitted by applicable law, GoLocal is provided without a guarantee that listings, users, work, or user-to-user arrangements will be accurate, safe, suitable, or successful. GoLocal is not responsible for users’ conduct or agreements with one another.</p>
+<p>Nothing in these Terms excludes rights or liabilities that cannot lawfully be excluded under applicable law.</p>
+</section>
+
+<section id="t13">
+<h2>13. Changes to these Terms</h2>
+<p>We may update these Terms when the service or applicable requirements change. We will update the date above and make the revised Terms available in the app. Your continued use after updated Terms take effect means you accept them. If you do not agree, stop using GoLocal.</p>
+</section>
+
+<section id="t14">
+<h2>14. Contact</h2>
+<p>For questions or concerns about these Terms, contact <a href="mailto:support@golocal.app">support@golocal.app</a>.</p>
+<div class="contact-box">
+<strong>GoLocal Support</strong><br>
+<a href="mailto:support@golocal.app">support@golocal.app</a>
+</div>
+<p style="margin-top:18px;font-size:13px;color:#788392;">
+Before publishing, replace [INSERT LEGAL BUSINESS OR OPERATOR NAME]
+with the correct legal operator name. This is a practical draft,
+not legal advice; consider having it reviewed for your business
+and applicable laws.
+</p>
+</section>
+
+</article>
+</div>
+
 </main>
 
 <footer>
 © 2026 GoLocal. All rights reserved.
 </footer>
+
+<script>
+function showDocument(id, button) {
+  document.querySelectorAll('.document').forEach(doc => {
+    doc.classList.remove('active');
+  });
+
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.classList.remove('active');
+  });
+
+  document.getElementById(id).classList.add('active');
+  button.classList.add('active');
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
 
 </body>
 </html>
